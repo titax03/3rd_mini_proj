@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #09090b;
+  --primary: #18181b;
+  --primary-foreground: #fafafa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: #fafafa;
+  color: #09090b;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.011em;
+}
+
+/* Minimalist clean selection */
+::selection {
+  background-color: #18181b;
+  color: #fafafa;
+}
+
+
